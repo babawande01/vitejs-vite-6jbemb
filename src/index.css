@@ -1,0 +1,63 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* write neccessary css for the grid- simple box style, use the css reset from the star project */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+}
+.cell {
+  background-color: white;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  }
+
+.cell:first-child{
+  /* background-color: aquamarine; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cell:last-child{
+  /* background-color: blue; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.row {
+  border-radius: 7px;
+  border: solid #868181;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
